@@ -1,0 +1,498 @@
+/* rubik-regular - latin */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* rubik-500 - latin */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('../fonts/rubik-v21-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* rubik-600 - latin */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('../fonts/rubik-v21-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* rubik-700 - latin */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/rubik-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v21-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* outfit-500 - latin */
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('../fonts/outfit-v6-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/outfit-v6-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* outfit-600 - latin */
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('../fonts/outfit-v6-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/outfit-v6-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* outfit-700 - latin */
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/outfit-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/outfit-v6-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* nunito-regular - latin */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/nunito-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/nunito-v25-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+}
+
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1431px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* STICKY-FOOTER */
+
+.site-main {
+    flex-grow: 1;
+}
+
+
+/********* Header start ********/
+
+.site-header {
+    background-color: #ffffff;
+    padding-top: 27px;
+    padding-bottom: 26px;
+    position: sticky;
+    top: 0;
+    z-index: 44;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-nav__item {
+    margin-right: 36px;
+}
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+
+.site-nav__item__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #222326cc;
+    text-decoration: none;
+}
+
+.site-nav__item-bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #222326;
+    text-decoration: none;
+}
+
+.wrapper-end {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-end__img {
+    margin-right: 12px;
+}
+
+.wrapper-end__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-end__inner__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.wrapper-end__inner__tel {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/********* Header end ********/
+
+
+/********* Main start ********/
+
+
+/********* Hero-section start ******/
+
+.hero-section {
+    padding-top: 133px;
+    /* padding-bottom: 91px; */
+    background-image: url(../images/hero-section-dots.svg), url(../images/hero-section-dotted.svg), url(../images/hero-section-round.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 65px) calc(50% - 350px), calc(50% + 305px) calc(50% - 70px), calc(50% + 305px) calc(50% - 68px);
+    background-color: #DBEBF8;
+}
+
+.hero-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section__wrapper-start {
+    width: 730px;
+}
+
+.hero-section__wrapper-start__title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 140%;
+    color: #050931;
+    width: 641px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+
+.hero-section__wrapper-start__desc {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 172%;
+    color: #767877;
+    margin-top: 0;
+    margin-bottom: 48px;
+    width: 617px;
+}
+
+.hero-section__wrapper-start__link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 166%;
+    color: #FFFFFF;
+    padding: 18px 40px;
+    background: #1F6BFF;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 92px;
+}
+
+.hero-section__wrapper-start__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section__wrapper-start__list__item__number {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: #050931;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.hero-section__wrapper-start__list__item__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #647685;
+    margin: 0;
+}
+
+.hero-section__wrapper-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section__wrapper-end__box {
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    width: 359px;
+    height: 225px;
+    background-color: #ffffff;
+    border-radius: 28px 28px 0px 0px;
+}
+
+.hero-section__wrapper-end__box::before {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #FCDC00;
+    border-radius: 50%;
+    margin-left: -55px;
+    margin-top: -45px;
+    background-image: url(../images/hero-section-groupsppl.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+}
+
+.hero-section__wrapper-end__box__title {
+    width: 226px;
+    margin: auto;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    color: #222326;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.hero-section__wrapper-end__img {
+    margin-right: 44px;
+    margin-left: 45px;
+}
+
+
+/********* Hero-section end ******/
+
+
+/********* About-section start ******/
+
+#about-section {
+    padding-top: 120px;
+    /* padding-bottom: 128px;
+    background-color: #ffffff;
+    background-image: url(../images/hero-section-round.svg), url(../images/hero-section-dots.svg); */
+    background-repeat: no-repeat;
+    /* background-position: calc(50% +100px) calc(50% + 30px), calc(50% + 33px) calc(50% + 34px); */
+}
+
+.about-section__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-section__start {
+    width: 499px;
+}
+
+.about-section__headline {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #050931;
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+.about-section__headline::after {
+    display: block;
+    width: 36px;
+    height: 2px;
+    background: #FE6B01;
+    border-radius: 100px;
+    content: "";
+}
+
+.about-section__title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #050931;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.about-section__desc {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #647685;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-section__grey {
+    font-weight: 600;
+}
+
+.about-section__gold {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #FE6B01;
+}
+
+.about-section__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #647685;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.about-section__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 166%;
+    color: #FFFFFF;
+    padding-top: 19px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+    background: #1F6BFF;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.about-section__end {
+    position: relative;
+    display: flex;
+}
+
+.about-section__img {
+    position: relative;
+    z-index: 34;
+    top: 95px;
+    left: -350px;
+}
+
+.about-section__simg {
+    position: absolute;
+    left: -55px;
+}
+
+
+/********* About-section end ******/
+
+
+/********* Main end ********/
